@@ -1,0 +1,48 @@
+.wrapper
+{
+    background-color: teal;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 80%);
+    padding: 10px;
+    border-radius: 10px;
+}
+.form
+{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+}
+.inputs >*
+{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    
+} 
+.inputs input 
+{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 5px;
+}
+
+.login{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.login button 
+{
+    margin-top: 10px;
+}

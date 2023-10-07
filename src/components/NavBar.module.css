@@ -1,0 +1,134 @@
+body{
+    background-color: lightgray;
+}
+.aside
+{
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 15rem;
+    box-shadow: 0px 0px 1px 0px rgb(0, 0, 0.5);
+}
+.list {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.element
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 5px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+.calendar {
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 5px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+
+.calendar .icon {
+    margin-right: 38px; /* Додайте цей рядок для відступу між іконкою та текстом */
+}
+
+
+
+.search{
+    display:flex;
+    align-items: center;
+    background-color: rgb(1, 160, 160);
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    color:white;
+}
+
+
+.search input 
+{
+    background-color: rgb(1, 160, 160);
+    color: white;
+}
+.search input::placeholder
+{
+    color: white;
+}
+
+.element:hover
+{
+    transition: 0.2s;
+    background-color: rgb(1, 168, 168);
+    cursor: pointer;
+}
+.calendar:hover 
+{
+    transition: 0.2s;
+    background-color: rgb(1, 168, 168);
+    cursor: pointer;
+}
+
+
+.search input:focus{
+    
+    outline: none;
+    border: none;
+}
+
+
+.logout {
+    background-color: teal;
+    position: fixed;
+    bottom: 10px;
+    font-size: 1.1rem;
+    color: white;
+    border-radius: 10px;
+    width: 5rem;
+    left: 70px;
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    white-space: nowrap; /* Текст буде в один ряд і не переноситиметься */
+}
+.logout:hover {
+    transition: 0.3s;
+    background-color: rgb(2, 179, 179);
+}
+.burgerButton{
+    display: none;
+}
+@media screen and (max-width:768px) {
+    .search 
+    {
+        display: none;
+    }
+    .burgerButton{
+        display: inline;
+        position: relative;
+        top: 20px;
+        left: 20px;
+        z-index: 1000;
+    }
+    .burgerButton div 
+    {
+        background-color: teal;
+        width: 46px;
+        padding: 15px;
+        border-radius: 30px;
+        z-index: 1000;
+    }
+    .aside 
+    {
+        z-index: 1000;
+    }
+}

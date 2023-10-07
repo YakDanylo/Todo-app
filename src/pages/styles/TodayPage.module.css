@@ -1,0 +1,71 @@
+.wrapper 
+{
+    margin:0;
+    position: fixed;
+    top: 10px;
+    left: 250px;
+    background-color: rgb(255, 255, 255);
+    height: 97%;
+    width: 80rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 0px rgb(0, 0, 0.5);
+}
+.wrapper h1
+{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+
+.element
+{
+    display:flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 5px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    background-color: rgb(5, 193, 193);
+}
+
+.element >*
+{
+    margin: 0 10px;
+}
+.element button 
+{
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 1px;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.element button:hover
+{
+    transition: 0.2s;
+    background-color: teal;
+    color: rgb(255, 255, 255);
+}
+.noTasks
+{
+    display: flex;
+    justify-content: center;
+
+}
+
+@media screen and (max-width: 768px)
+{
+    .wrapper{
+        position: fixed;
+        top: 10px;
+        left: 5px;
+        width: 92%;
+    }
+    .wrapper h1 
+    {
+        text-align: center;
+    }
+}
